@@ -1,10 +1,8 @@
+// src/components/Home.jsx
+import React from "react";
+
 function Home() {
-  return (
-    <div style={{ padding: '20px' }}>
-      <h1>Welcome to Our Company</h1>
-      <p>We are dedicated to delivering excellence in all our services.</p>
-    </div>
-  );
+  return <h1>Home Page</h1>;
 }
 
 export default Home;
