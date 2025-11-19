@@ -1,17 +1,25 @@
-// src/components/Navbar.jsx
-import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav>
-      <ul style={{ display: "flex", gap: "20px", listStyle: "none" }}>
-        <li>Home</li>
-        <li>About</li>
-        <li>Services</li>
-        <li>Contact</li>
-      </ul>
+    <nav
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        padding: "10px",
+        backgroundColor: "#f2f2f2"
+      }}
+    >
+      <h2>My Company</h2>
+      <div style={{ display: "flex", gap: "15px" }}>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/services">Services</Link>
+        <Link to="/contact">Contact</Link>
+      </div>
     </nav>
   );
 }
 
 export default Navbar;
+
